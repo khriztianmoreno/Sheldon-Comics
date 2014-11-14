@@ -1,0 +1,1 @@
+var Loan = Backbone.Model.extend({});
