@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Sheldon Comics</title>
+		<!-- StyleSheets /-->
+		<link rel='shortcut icon' href='images/favicon.png' type='image/x-icon' />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="styles/theme.css">
+		<link rel="stylesheet" href="styles/theme-elements.css">
+		<link rel="stylesheet" href="styles/theme-animate.css">
+		<link rel='stylesheet' href='styles/theme-elements.css' type='text/css' />		
+		<link rel='stylesheet' href='styles/main.css' type='text/css' />
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="styles/theme-responsive.css" />
+		<!-- Fonts /-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic,800,600italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<!-- /*********** Header ***********/ -->
+		<header id="headerContainer">
+			<div class="container">
+				<div class="row centerContainer">
+					<div class="logoContainer">
+						<a href="#"><img src="images/logo.png" alt="Comics-page" /></a><!--Replace With Your Logo-->
+					</div>
+					<!-- end Logo Container -->	
+					<!-- /*********** Menu Container ***********/ -->	
+					<div id="menuContainer">
+						<nav class="nav-main mega-menu menu">
+							<ul class="nav nav-pills nav-main" id="mainMenu">
+								<li><a href="#">Home</a></li>
+								<li><a href="#store">Comics</a></li>
+								<li><a href="#">About us</a></li>
+								<li id="headerAccount" class="dropdown mega-menu-item mega-menu-signin signin">
+									<a href="#" class="dropdown-toggle">Sign In</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="mega-menu-content">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="signin-form">
+															<span class="mega-menu-sub-title">Sign In</span>
+															<form action="" id="" type="post">
+																<div class="row">
+																	<div class="form-group">
+																		<div class="col-md-12">
+																			<label>Username or E-mail Address</label>
+																			<input type="text" value="" class="form-control">
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="form-group">
+																		<div class="col-md-12">
+																			<label>Password</label>
+																			<input type="password" value="" class="form-control">
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-md-6">
+																		<span class="remember-box checkbox">
+																		<label for="rememberme">
+																		<input type="checkbox" id="rememberme" name="rememberme">Remember Me
+																		</label>
+																		</span>
+																	</div>
+																	<div class="col-md-6">
+																		<input id="btn-login" type="submit" value="Login" class="btn btn-danger pull-right push-bottom" data-loading-text="Loading..." />
+																	</div>
+																</div>
+															</form>
+															<p class="sign-up-info">Don't have an account yet? <a href="#" id="headerSignUp">Sign Up!</a></p>
+														</div>
+														<div class="signup-form">
+															<span class="mega-menu-sub-title">Create Account</span>
+															<form action="" id="" type="post">
+																<div class="row">
+																	<div class="form-group">
+																		<div class="col-md-12">
+																			<label>E-mail Address</label>
+																			<input type="text" value="" class="form-control">
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="form-group">
+																		<div class="col-md-6">
+																			<label>Password</label>
+																			<input type="password" value="" class="form-control">
+																		</div>
+																		<div class="col-md-6">
+																			<label>Re-enter Password</label>
+																			<input type="password" value="" class="form-control">
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-md-12">
+																		<input id="btn-create-account" type="submit" value="Create Account" class="btn btn-danger pull-right push-bottom" data-loading-text="Loading...">
+																	</div>
+																</div>
+															</form>
+															<p class="log-in-info">Already have an account? <a href="#" id="headerSignIn">Log In!</a></p>
+														</div>
+														<div class="recover-form">
+															<span class="mega-menu-sub-title">Reset My Password</span>
+															<p>Complete the form below to receive an email with the authorization code needed to reset your password.</p>
+															<form action="" id="" type="post">
+																<div class="row">
+																	<div class="form-group">
+																		<div class="col-md-12">
+																			<label>E-mail Address</label>
+																			<input type="text" value="" class="form-control">
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-md-12">
+																		<input type="submit" value="Submit" class="btn btn-danger pull-right push-bottom" data-loading-text="Loading...">
+																	</div>
+																</div>
+															</form>
+															<p class="log-in-info">Already have an account? <a href="#" id="headerRecoverCancel">Log In!</a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<!-- end Menu -->	
+					</div>
+					<!-- end Menu Container -->	
+					<!-- /*********** Image top ***********/ -->
+					<div class="image_top">
+						<img src="images/866x330.png" alt="" /><!--Replace With Your Image-->		
+					</div>
+				</div>
+			</div>
+			<!-- end Center Container -->
+		</header>
+		<!-- end header Container-->
+		<div role="main" class="main">
+			<!-- /*********** Store ***********/ -->
+			<section id="store">
+				<div class="container">
+					<h2>Catalog</h2>
+					<ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter">
+						<li data-option-value="*" class="active"><a href="#">Show All</a></li>
+						<li data-option-value=".populars"><a href="#">Populars</a></li>
+						<li data-option-value=".searches"><a href="#">Top Searches</a></li>
+						<li data-option-value=".recommended"><a href="#">Recommended</a></li>
+					</ul>
+					<hr>
+					<div class="row">
+						<ul class="portfolio-list sort-destination isotope" data-sort-id="portfolio" style="position: relative; overflow: hidden; height: 594px;">
+							<li class="col-md-3 isotope-item populars" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#" class="thumb-info">
+									<img alt="" class="img-responsive" src="images/cover.jpg">
+									<span class="thumb-info-title">
+									<span class="thumb-info-inner">Spider Man</span>
+									</span>
+									<span class="thumb-info-action">
+									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+									</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 isotope-item recommended" style="position: absolute; left: 0px; top: 0px; transform: translate3d(293px, 0px, 0px);">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#" class="thumb-info">
+									<img alt="" class="img-responsive" src="images/cover.jpg">
+									<span class="thumb-info-title">
+									<span class="thumb-info-inner">Iron Man</span>
+									</span>
+									<span class="thumb-info-action">
+									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+									</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 isotope-item searches" style="position: absolute; left: 0px; top: 0px; transform: translate3d(586px, 0px, 0px);">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#" class="thumb-info">
+									<img alt="" class="img-responsive" src="images/cover.jpg">
+									<span class="thumb-info-title">
+									<span class="thumb-info-inner">X-MEN</span>
+									</span>
+									<span class="thumb-info-action">
+									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+									</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 isotope-item populars" style="position: absolute; left: 0px; top: 0px; transform: translate3d(879px, 0px, 0px);">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#" class="thumb-info">
+									<img alt="" class="img-responsive" src="images/cover.jpg">
+									<span class="thumb-info-title">
+									<span class="thumb-info-inner">Hulk</span>
+									</span>
+									<span class="thumb-info-action">
+									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+									</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 isotope-item populars" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 297px, 0px);">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#" class="thumb-info">
+									<img alt="" class="img-responsive" src="images/cover.jpg">
+									<span class="thumb-info-title">
+									<span class="thumb-info-inner">Superman</span>
+									</span>
+									<span class="thumb-info-action">
+									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+									</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 isotope-item populars" style="position: absolute; left: 0px; top: 0px; transform: translate3d(293px, 297px, 0px);">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#" class="thumb-info">
+									<img alt="" class="img-responsive" src="images/cover.jpg">
+									<span class="thumb-info-title">
+									<span class="thumb-info-inner">Wolverine</span>
+									</span>
+									<span class="thumb-info-action">
+									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+									</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 isotope-item recommended" style="position: absolute; left: 0px; top: 0px; transform: translate3d(586px, 297px, 0px);">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#" class="thumb-info">
+									<img alt="" class="img-responsive" src="images/cover.jpg">
+									<span class="thumb-info-title">
+									<span class="thumb-info-inner">Capitan America</span>
+									</span>
+									<span class="thumb-info-action">
+									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+									</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 isotope-item searches" style="position: absolute; left: 0px; top: 0px; transform: translate3d(879px, 297px, 0px);">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#" class="thumb-info">
+									<img alt="" class="img-responsive" src="images/cover.jpg">
+									<span class="thumb-info-title">
+									<span class="thumb-info-inner">GI JOE</span>
+									</span>
+									<span class="thumb-info-action">
+									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+									</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end Center Container -->
+			</section>
+			<!-- /*********** Subscribe ***********/ -->
+			<div id="contactContainer">
+				<div class="centerContainer">
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="#">Home</a>
+								<a href="#">Portfolio</a>
+								<a href="#">About us</a>
+								<a href="#">Contacts</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end center conrainer -->
+			</div>			
+		</div>
+
+		<footer class="short" id="footerContainer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<h4>About Sheldon Comics</h4>
+						<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+						<hr class="light">
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<h5 class="short">Contact Us</h5>
+						<span class="phone">(800) 123-4567</span>
+						<p class="short">International: (333) 456-6670</p>
+						<p class="short">Fax: (222) 531-8999</p>
+						<ul class="list icons list-unstyled">
+							<li><i class="icon icon-envelope"></i> <a href="mailto:okler@okler.net">okler@okler.net</a></li>
+						</ul>
+						<div class="social-icons">
+							<ul class="social-icons">
+								<li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Facebook">Facebook</a></li>
+								<li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Twitter">Twitter</a></li>
+								<li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Linkedin">Linkedin</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<p>© Copyright 2014. All Rights Reserved.</p>
+						</div>
+						<div class="col-md-4">
+							<nav id="sub-menu">
+								<ul>
+									<li><a href="page-faq.html">FAQ's</a></li>
+									<li><a href="sitemap.html">Sitemap</a></li>
+									<li><a href="contact-us.html">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="scripts/vendor/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+
+				var headerAccountWrapper = $("#headerAccount"),
+				closeEventAdded = false;
+
+				// Events
+				headerAccountWrapper.find("input").on("focus", function() {
+					headerAccountWrapper.addClass("open");
+
+					if(closeEventAdded) return;
+
+					$(document).mouseup(function(e) {
+					    if (!headerAccountWrapper.is(e.target) && headerAccountWrapper.has(e.target).length === 0) {
+				        	headerAccountWrapper.removeClass("open");
+				    	}
+					});
+
+					closeEventAdded = true;
+				});
+
+			    $("#headerSignUp").on("click", function(e) {
+					e.preventDefault();
+					headerAccountWrapper.addClass("signup").removeClass("signin").removeClass("recover");
+					headerAccountWrapper.find(".signup-form input:first").focus();
+				});
+
+				$("#headerSignIn").on("click", function(e) {
+					e.preventDefault();
+					headerAccountWrapper.addClass("signin").removeClass("signup").removeClass("recover");
+					headerAccountWrapper.find(".signin-form input:first").focus();
+				});
+
+				$("#headerRecover").on("click", function(e) {
+					e.preventDefault();
+					headerAccountWrapper.addClass("recover").removeClass("signup").removeClass("signin");
+					headerAccountWrapper.find(".recover-form input:first").focus();
+				});
+
+				$("#headerRecoverCancel").on("click", function(e) {
+					e.preventDefault();
+					headerAccountWrapper.addClass("signin").removeClass("signup").removeClass("recover");
+					headerAccountWrapper.find(".signin-form input:first").focus();
+				});
+			});
+		</script>
+	</body>
+</html>

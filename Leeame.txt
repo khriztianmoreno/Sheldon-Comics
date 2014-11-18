@@ -1,0 +1,15 @@
+﻿Ejecutar 
+
+1. npm install
+2. Servidor: grunt
+
+
+git status
+git add --all
+git commit -m "change links at the home"
+git push origin master
+
+
+---branch mvp
+git pull origin mvp 
+git push origin mvp

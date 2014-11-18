@@ -1,0 +1,6 @@
+{
+  "generator-backbone": {
+    "appPath": "app",
+    "appName": "sheldon-comics"
+  }
+}

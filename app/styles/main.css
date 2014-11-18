@@ -1,0 +1,106 @@
+/*********** General Sections ***********/
+
+body { font-family: Open Sans, Tahoma, Arial, sans-serif; font-size: 13px; font-weight: normal;  color: #333333; }
+
+a {
+color: #b73329;
+text-decoration: none;
+}
+
+a.thumb-info span.thumb-info-title{background: #b73329 !important;}
+
+
+.centerContainer { width: 866px; margin: 0 auto; }
+
+/* ----------------------------------------- */
+/*********** Header Container ***********/
+
+#headerContainer { width: 100%; height: 695px; background: #151515 url('../images/background_top.png') center top no-repeat; border-bottom: 5px solid #b73329; }
+.logoContainer { padding-top: 20px; float: left; }
+
+#headerContainer .image_top img{ margin-top: 20px; box-shadow: 0 0 10px #000000; }
+#menuContainer .menu { padding-top: 60px; float: right; }
+#menuContainer .menu a { padding: 15px 15px; color: #ffffff; text-shadow: 0 1px 0 #000000; text-decoration: none; font-size: 25px; font-family: Bangers, Open Sans, Arial, Sans-serif; }
+#menuContainer .menu a:hover { color: #c93529; }
+#headerSignUp, #headerSignIn  {color: #c93529 !important;}
+#btn-login, #btn-create-account {font-size:18px; font-family: Bangers, Open Sans, Arial, Sans-serif;}
+form label {
+	font-weight: normal;
+	text-shadow: 0 1px 0 #000000;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+/* ----------------------------------------- */
+/*********** Gallery Container ***********/
+
+#newComicsContainer { padding-top: 25px; border-bottom: 5px solid #b73329;}
+.bigTitle { margin: 0 auto; width: 448px; height: 130px; background: url('../images/bg_title.png') center top no-repeat; text-align: center; }
+.bigTitle h2 { padding: 35px; color: #ffffff; font-size: 63px; font-weight: 400; font-family: Bangers, Open Sans, Tahoma, Arial, sans-serif; text-shadow: 1px 1px 0 #000000;}
+#newComicsContainer .oneColl { width: 222px; float: left; margin: 60px 0; padding-right: 99px; text-align: center; }
+#newComicsContainer h3 { padding: 15px 0; color: #b73329; font-size: 21px; font-weight: 400; font-family: Bangers, Open Sans, Tahoma, Arial, sans-serif; text-shadow: 0 1px 0 #000000; text-align: center; }
+#newComicsContainer  p { padding-bottom: 15px; }
+
+#newComicsContainer .info { border-top: 5px solid #b73329; clear: both; padding: 13px 0 64px 0; text-align: center; margin-top: 40px;}
+#newComicsContainer .info p{ color: #616161;}
+#news{margin-top: 15px;}
+.center {display: block; margin-right: auto; margin-left: auto;}
+
+/* ----------------------------------------- */
+/*********** Store Container ***********/
+
+section#store {
+	border-bottom: 5px solid #b73329;
+	border-top: 5px solid #b73329;
+	min-height: 50px;
+	padding: 0;
+	padding: 20px 0;
+	position: relative;
+	text-align: left;
+}
+#store h2 {
+	font-weight: 400;
+	font-family: Bangers, Open Sans, Tahoma, Arial, sans-serif;
+	text-shadow: 0 1px 0 #000000;
+	font-size: 2.6em;
+	line-height: 42px;
+	margin: 0 0 32px 0;
+	color: #b73329;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {color: #fff; background-color: #b73329 !important;}
+
+
+#store .fourCol { width: 200px; margin-top: 64px; padding-right: 22px; float: left; text-align: center; }
+#store .fourCol img{ padding-top: 13px; }
+#store .fourCol h3 { color: #b73329; font-size: 21px; font-weight: 400; font-family: Bangers, Open Sans, Tahoma, Arial, sans-serif; text-shadow: 0 1px 0 #000000; }
+
+#store .info { margin-top: 64px; display: inline-block; clear: both; padding: 13px 0 50px 0; text-align: center; border-top: 5px solid #1d1d1d;}
+#store .info p{ color: #424242;}
+
+/* ----------------------------------------- */
+/*********** Contact Container ***********/
+
+#contactContainer { padding: 25px 0; background-color: #131313; text-align: center; border-top: 5px solid #1f1f1f; } 
+#contactContainer p { color: #ffffff; text-shadow: 0 1px 0 #000000; font-size: 15px; font-family: Bangers, Open Sans, Arial, Sans-serif; }
+
+#contactContainer .menu { padding: 20px 0; }
+#contactContainer .menu a { padding: 0 10px; color: #434343; text-shadow: 0 1px 0 #000000; text-decoration: none; font-size: 18px; font-family: Bangers, Open Sans, Arial, Sans-serif; }
+#contactContainer .menu a:hover { color: #9a9a9a; }
+
+#subscribeForm { width: 866px; height: 135px; display: inline-block; padding: 0px 0; margin-top: 0px; background-image: url('../images/bg_subscribe.png');}
+#sub_text { width: 240px; padding: 8px; margin-top: 50px; background-color: #961e16; border: 0 none; color: #ffffff; font-size: 20px; font-family: Bangers, Open Sans, Arial, Sans-serif; border: 1px solid #8a1a12; }
+#submit { width: 376px; height: 135px; float: right;  border: 0 none; background-image: url('../images/subscribe.png'); background: transperent; cursor: pointer; }
+
+/* ----------------------------------------- */
+/*********** Footer Container ***********/
+
+#footerContainer { padding: 25px 0; background-color: #a1241b; border-top: 5px solid #1f1f1f; } 
+#footerContainer p { color: #ffffff; }
+
+
+/***Sobre escribir estilos*/
+/*.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+	background-color: #b73329 !important;
+	border-color: #b73329 !important;
+}*/

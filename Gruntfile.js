@@ -6,13 +6,13 @@ module.exports = function(grunt){
 	    server: {
 	      options: {
 	        port: 9000,
-	        base: 'app-dev/'
+	        base: 'app/'
 	      }
 	    }
 	  },
 	  watch: {
 	    project: {
-	  	  files: ['app-dev/**/*.js', 'app-dev/**/*.html', 'app-dev/**/*.json', 'app-dev/**/*.css'],
+	  	  files: ['app/**/*.js', 'app/**/*.html', 'app/**/*.json', 'app/**/*.css'],
 	      	options: {
 	          livereload: true,
 	          watchTask: true

@@ -1,0 +1,25 @@
+{
+  "name": "sheldon-comics",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "backbone": "~1.1.0"
+  },
+  "authors": [
+    "Khriztian Moreno <khriztianmoreno@gmail.com>"
+  ],
+  "description": "A simple Sheldon-Comics built with Backbone.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
