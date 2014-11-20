@@ -6,22 +6,21 @@ Sheldon.Views.Comic = Backbone.View.extend({
 	    'click': 'navigate'
 	},
 
-	  template: Handlebars.compile($("#list-comics").html()),
+	template: Handlebars.compile($("#list-comics").html()),
 
-	  initialize: function () {
+	initialize: function () {
 	    this.listenTo(this.model, "change", this.render, this);
-	  },
+	},
 
-	  render: function () {
-	  	//debugger
+	render: function () {
 	    var comic = this.model.toJSON()
 	    var html = this.template(comic);
 	    this.$el.html(html);
 	    return this;
-	  },
+	},
 
-	  navigate: function () {
+	navigate: function () {
 	    //app.navigate("comic/" + this.model.get("idComic"), { trigger: true });
-	  }
+	}
 
 });

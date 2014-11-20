@@ -1,269 +1,295 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Sheldon Comics</title>
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- StyleSheets /-->
-		<link rel='shortcut icon' href='images/favicon.png' type='image/x-icon' />
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-		<!-- Theme CSS -->
-		<link rel="stylesheet" href="styles/theme.css">
-		<link rel="stylesheet" href="styles/theme-elements.css">
-		<link rel="stylesheet" href="styles/theme-animate.css">
-		<link rel='stylesheet' href='styles/theme-elements.css' type='text/css' />		
-		<link rel='stylesheet' href='styles/main.css' type='text/css' />
-		<!-- Responsive CSS -->
-		<link rel="stylesheet" href="styles/theme-responsive.css" />
-		<!-- Fonts /-->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic,800,600italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<!-- /*********** Header ***********/ -->
-		<header id="headerContainer">
-			<div class="container">
-				<div class="row centerContainer">
-					<div class="logoContainer">
-						<a href="#"><img src="images/logo.png" alt="Comics-page" /></a><!--Replace With Your Logo-->
-					</div>
-					<!-- end Logo Container -->	
-					<!-- /*********** Menu Container ***********/ -->	
-					<div id="menuContainer">
-						<nav class="nav-main mega-menu menu">
-							<ul class="nav nav-pills nav-main" id="mainMenu">
-								<li><a href="#">Home</a></li>
-								<li><a href="#store">Comics</a></li>
-								<li><a href="#">About us</a></li>
-								<li id="headerAccount" class="dropdown mega-menu-item mega-menu-signin signin">
-									<a href="#" class="dropdown-toggle">Sign In</a>
-									<ul class="dropdown-menu">
-										<li>
-											<div class="mega-menu-content">
-												<div class="row">
-													<div class="col-md-12">
-														<div class="signin-form">
-															<span class="mega-menu-sub-title">Sign In</span>
-															<form action="" id="" type="post">
-																<div class="row">
-																	<div class="form-group">
-																		<div class="col-md-12">
-																			<label>Username or E-mail Address</label>
-																			<input type="text" value="" class="form-control">
-																		</div>
-																	</div>
-																</div>
-																<div class="row">
-																	<div class="form-group">
-																		<div class="col-md-12">
-																			<label>Password</label>
-																			<input type="password" value="" class="form-control">
-																		</div>
-																	</div>
-																</div>
-																<div class="row">
-																	<div class="col-md-6">
-																		<span class="remember-box checkbox">
-																		<label for="rememberme">
-																		<input type="checkbox" id="rememberme" name="rememberme">Remember Me
-																		</label>
-																		</span>
-																	</div>
-																	<div class="col-md-6">
-																		<input id="btn-login" type="submit" value="Login" class="btn btn-danger pull-right push-bottom" data-loading-text="Loading..." />
-																	</div>
-																</div>
-															</form>
-															<p class="sign-up-info">Don't have an account yet? <a href="#" id="headerSignUp">Sign Up!</a></p>
-														</div>
-														<div class="signup-form">
-															<span class="mega-menu-sub-title">Create Account</span>
-															<form action="" id="" type="post">
-																<div class="row">
-																	<div class="form-group">
-																		<div class="col-md-6">
-																			<label>First Name</label>
-																			<input type="text" value="" class="form-control">
-																		</div>
-																		<div class="col-md-6">
-																			<label>Last Name</label>
-																			<input type="text" value="" class="form-control">
-																		</div>
-																	</div>
-																</div>
-																<div class="row">
-																	<div class="form-group">
-																		<div class="col-md-12">
-																			<label>E-mail Address</label>
-																			<input type="email" value="" class="form-control">
-																		</div>
-																	</div>
-																</div>
-																<div class="row">
-																	<div class="form-group">
-																		<div class="col-md-6">
-																			<label>Password</label>
-																			<input type="password" value="" class="form-control">
-																		</div>
-																		<div class="col-md-6">
-																			<label>Re-enter Password</label>
-																			<input type="password" value="" class="form-control">
-																		</div>
-																	</div>
-																</div>
-																<div class="row">
-																	<div class="col-md-12">
-																		<input id="btn-create-account" type="submit" value="Create Account" class="btn btn-danger pull-right push-bottom" data-loading-text="Loading...">
-																	</div>
-																</div>
-															</form>
-															<p class="log-in-info">Already have an account? <a href="#" id="headerSignIn">Log In!</a></p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</nav>
-						<!-- end Menu -->	
-					</div>
-					<!-- end Menu Container -->	
-					<!-- /*********** Image top ***********/ -->
-					<div id="slide-show-main" class="image_top">
-						<img src="images/866x330.png" alt="" /><!--Replace With Your Image-->		
-					</div>
-				</div>
-			</div>
-			<!-- end Center Container -->
-		</header>
-		<!-- end header Container-->
-		<div role="main" class="main">
-			<!-- /*********** Store ***********/ -->
-			<section id="store">
-				<div class="container">
-					<h2>Catalog</h2>
-					<ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter">
-						<li data-option-value="*" class="active"><a href="#">Show All</a></li>
-						<li data-option-value=".populars"><a href="#">Populars</a></li>
-						<li data-option-value=".searches"><a href="#">Top Searches</a></li>
-						<li data-option-value=".recommended"><a href="#">Recommended</a></li>
-					</ul>
-					<hr>
-					<div class="row">
-						<ul id="comics-list" class="portfolio-list sort-destination" style="position: relative; overflow: hidden; height: 594px;">
-							<!--- Template Render-->
-							
-						</ul>
-					</div>
-				</div>
-				<!-- end Center Container -->
-			</section>
-			<!-- /*********** Subscribe ***********/ -->
-			<div id="contactContainer">
-				<div class="centerContainer">
-					<div class="menu">
-						<ul>
-							<li>
-								<a href="#">Home</a>
-								<a href="#">Portfolio</a>
-								<a href="#">About us</a>
-								<a href="#">Contacts</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- end center conrainer -->
-			</div>			
-		</div>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sheldon Comics</title>
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- StyleSheets /-->
+        <link rel='shortcut icon' href='images/favicon.png' type='image/x-icon' />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="styles/theme.css">
+        <link rel="stylesheet" href="styles/theme-elements.css">
+        <link rel="stylesheet" href="styles/theme-animate.css">
+        <link rel='stylesheet' href='styles/theme-elements.css' type='text/css' />
+        <link rel='stylesheet' href='styles/main.css' type='text/css' />
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="styles/theme-responsive.css" />
+        <!-- Fonts /-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic,800,600italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <!-- /*********** Header ***********/ -->
+        <header id="headerContainer">
+            <div class="container">
+                <div class="row centerContainer">
+                    <div class="logoContainer">
+                        <a href="#"><img src="images/logo.png" alt="Comics-page" /></a><!--Replace With Your Logo-->
+                    </div>
+                    <!-- end Logo Container -->	
+                    <!-- /*********** Menu Container ***********/ -->	
+                    <div id="menuContainer">
+                        <nav id="mainMenu" class="nav-main mega-menu menu">
+                            <ul class="nav nav-pills nav-main" >
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#store">Comics</a></li>
+                                <li id="headerAccount" class="dropdown mega-menu-item mega-menu-signin signin">
+                                    <a id="profile-sign" href="#" class="dropdown-toggle">Sign In</a>
+                                    <ul id="menu-sing" class="dropdown-menu">
+                                        <li>
+                                            <div class="mega-menu-content">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="signin-form">
+                                                            <span class="mega-menu-sub-title">Sign In</span>
+                                                            <form id="sign-in-form" type="post">
+                                                                <div class="row">
+                                                                    <div class="form-group">
+                                                                        <div class="col-md-12">
+                                                                            <label>Username or E-mail Address</label>
+                                                                            <input type="text" value="" class="form-control" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="form-group">
+                                                                        <div class="col-md-12">
+                                                                            <label>Password</label>
+                                                                            <input type="password" value="" class="form-control" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <span class="remember-box checkbox">
+                                                                        <label for="rememberme">
+                                                                        <input type="checkbox" id="rememberme" name="rememberme">Remember Me
+                                                                        </label>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <input id="btn-login" type="submit" value="Login" class="btn btn-danger pull-right push-bottom" data-loading-text="Loading..." />
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                            <p class="sign-up-info">Don't have an account yet? <a href="#" id="headerSignUp">Sign Up!</a></p>
+                                                        </div>
+                                                        <div id="createuser-form" class="signup-form">
+                                                            <span class="mega-menu-sub-title">Create Account</span>
+                                                            <form id="create-account" type="post">
+                                                                <div class="row">
+                                                                    <div class="form-group">
+                                                                        <div class="col-md-6">
+                                                                            <label>First Name</label>
+                                                                            <input id="firstName" name="firstName" type="text" value="" class="form-control" required>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <label>Last Name</label>
+                                                                            <input id="lastName" name="lastName" type="text" value="" class="form-control" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="form-group">
+                                                                        <div class="col-md-12">
+                                                                            <label>E-mail Address</label>
+                                                                            <input id="email-user" name="email-user" type="email" value="" class="form-control" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="form-group">
+                                                                        <div class="col-md-6">
+                                                                            <label>Password</label>
+                                                                            <input id="password-user" name="password-user" type="password" value="" class="form-control" required>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <label>Re-enter Password</label>
+                                                                            <input id="" name="" type="password" value="" class="form-control" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <input id="btn-create-account" type="submit" value="Create Account" class="btn btn-danger pull-right push-bottom" data-loading-text="Loading...">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                            <p class="log-in-info">Already have an account? <a href="#" id="headerSignIn">Log In!</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- end Menu -->	
+                    </div>
+                    <!-- end Menu Container -->	
+                    <!-- /*********** Image top ***********/ -->
+                    <div id="slide-show-main" class="image_top">
+                        <img src="images/866x330.png" alt="" /><!--Replace With Your Image-->		
+                    </div>
+                </div>
+            </div>
+            <!-- end Center Container -->
+        </header>
+        <!-- end header Container-->
+        <div role="main" class="main">
+            <!-- /*********** Store ***********/ -->
+            <section id="store">
+                <div class="container">
+                    <h2>Catalog</h2>
+                    <ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter">
+                        <li data-option-value="*" class="active"><a href="#">Show All</a></li>
+                        <li data-option-value=".populars"><a href="#">Populars</a></li>
+                        <li data-option-value=".searches"><a href="#">Top Searches</a></li>
+                        <li data-option-value=".recommended"><a href="#">Recommended</a></li>
+                    </ul>
+                    <hr>
+                    <div class="row">
+                        <ul id="comics-list" class="portfolio-list sort-destination" style="position: relative; overflow: hidden; height: 594px;">
+                            <!--- Template Render-->
+                        </ul>
+                    </div>
+                </div>
+                <!-- end Center Container -->
+            </section>
+            <!-- /*********** Subscribe ***********/ -->
+            <div id="contactContainer">
+                <div class="centerContainer">
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                                <a href="#">Portfolio</a>
+                                <a href="#">About us</a>
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end center conrainer -->
+            </div>
+        </div>
+        <footer class="short" id="footerContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>About Sheldon Comics</h4>
+                        <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        <hr class="light">
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <h5 class="short">Contact Us</h5>
+                        <span class="phone">(800) 123-4567</span>
+                        <p class="short">International: (333) 456-6670</p>
+                        <p class="short">Fax: (222) 531-8999</p>
+                        <ul class="list icons list-unstyled">
+                            <li><i class="icon icon-envelope"></i> <a href="mailto:okler@okler.net">okler@okler.net</a></li>
+                        </ul>
+                        <div class="social-icons">
+                            <ul class="social-icons">
+                                <li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Facebook">Facebook</a></li>
+                                <li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Twitter">Twitter</a></li>
+                                <li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Linkedin">Linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>© Copyright 2014. All Rights Reserved.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <nav id="sub-menu">
+                                <ul>
+                                    <li><a href="page-faq.html">FAQ's</a></li>
+                                    <li><a href="sitemap.html">Sitemap</a></li>
+                                    <li><a href="contact-us.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script id="list-comics" type="text/x-handlebars-template">
+            <div class="portfolio-item img-thumbnail">
+            	<a href="#" class="thumb-info">
+            	<img alt="{{title}}" class="img-responsive" src="{{image}}">
+            	<span class="thumb-info-title">
+            	<span class="thumb-info-inner">{{title}}</span>
+            	</span>
+            	<span class="thumb-info-action">
+            	<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+            	</span>
+            	</a>
+            </div>
+        </script>
+        <script id="list-profile" type="text/x-handlebars-template">
+            <ul class="nav nav-pills nav-main" id="mainMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Loans</a></li>
+                <li class="dropdown mega-menu-item mega-menu-signin signin logged" id="headerAccount">
+                    <a id="profile-sign" href="#" class="dropdown-toggle">{{firstName}} {{lastName}}</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="mega-menu-content">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="user-avatar">
+                                            <div class="img-thumbnail">
+                                                <img src="{{avatar}}" alt="{{firstName}} {{lastName}}">
+                                            </div>
+                                            <p><strong>{{firstName}} {{lastName}}</strong><span>¡Bienvenido!</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul id="account-options" class="list-account-options">
+                                            <li>
+                                                <a id="my-account" href="#my-account">My Account</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Log Out</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li> 
+            </ul>          
+        </script>
 
-		<footer class="short" id="footerContainer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8">
-						<h4>About Sheldon Comics</h4>
-						<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-						<hr class="light">
-					</div>
-					<div class="col-md-3 col-md-offset-1">
-						<h5 class="short">Contact Us</h5>
-						<span class="phone">(800) 123-4567</span>
-						<p class="short">International: (333) 456-6670</p>
-						<p class="short">Fax: (222) 531-8999</p>
-						<ul class="list icons list-unstyled">
-							<li><i class="icon icon-envelope"></i> <a href="mailto:okler@okler.net">okler@okler.net</a></li>
-						</ul>
-						<div class="social-icons">
-							<ul class="social-icons">
-								<li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Facebook">Facebook</a></li>
-								<li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Twitter">Twitter</a></li>
-								<li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Linkedin">Linkedin</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-copyright">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8">
-							<p>© Copyright 2014. All Rights Reserved.</p>
-						</div>
-						<div class="col-md-4">
-							<nav id="sub-menu">
-								<ul>
-									<li><a href="page-faq.html">FAQ's</a></li>
-									<li><a href="sitemap.html">Sitemap</a></li>
-									<li><a href="contact-us.html">Contact</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<script id="list-comics" type="text/x-handlebars-template">
-									<div class="portfolio-item img-thumbnail">
-										<a href="#" class="thumb-info">
-										<img alt="{{title}}" class="img-responsive" src="{{image}}">
-										<span class="thumb-info-title">
-										<span class="thumb-info-inner">{{title}}</span>
-										</span>
-										<span class="thumb-info-action">
-										<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
-										</span>
-										</a>
-									</div>
-							</script>
-
-
-
-
-
-
-		<script src="scripts/vendor/jquery-1.7.2.min.js"></script>
-		<script src="bower_components/underscore/underscore.js"></script>
-		<script src="bower_components/backbone/backbone.js"></script>
-		<!-- Firebase -->
-		<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
-		<!-- BackFire -->
-		<script src="https://cdn.firebase.com/libs/backfire/0.4.0/backfire.min.js"></script>
-		<script src="bower_components/handlebars/handlebars.js"></script>
-		<script type="text/javascript" src="scripts/app.js"></script>
-	  	<script type="text/javascript" src="scripts/models/comic.js"></script>
-	  	<script type="text/javascript" src="scripts/models/loan.js"></script>
-	  	<script type="text/javascript" src="scripts/models/user.js"></script>
-	  	<script type="text/javascript" src="scripts/collections/comics.js"></script>
-	  	<script type="text/javascript" src="scripts/collections/loans.js"></script>
-	  	<script type="text/javascript" src="scripts/collections/users.js"></script>
-	  	<script type="text/javascript" src="scripts/views/comic.js"></script>
-	  	<script type="text/javascript" src="scripts/views/comics.js"></script>
-	  	<script type="text/javascript" src="scripts/routers/router.js"></script>
-	  	<script type="text/javascript" src="scripts/main.js"></script>
-
-	</body>
+        <script src="scripts/vendor/jquery-1.7.2.min.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/backbone/backbone.js"></script>
+        <!-- Firebase -->
+        <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+        <!-- BackFire -->
+        <script src="https://cdn.firebase.com/libs/backfire/0.4.0/backfire.min.js"></script>
+        <script src="bower_components/handlebars/handlebars.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script type="text/javascript" src="scripts/models/comic.js"></script>
+        <script type="text/javascript" src="scripts/models/loan.js"></script>
+        <script type="text/javascript" src="scripts/models/user.js"></script>
+        <script type="text/javascript" src="scripts/collections/comics.js"></script>
+        <script type="text/javascript" src="scripts/collections/loans.js"></script>
+        <script type="text/javascript" src="scripts/collections/users.js"></script>
+        <script type="text/javascript" src="scripts/views/comic.js"></script>
+        <script type="text/javascript" src="scripts/views/comics.js"></script>
+        <script type="text/javascript" src="scripts/views/users.js"></script>
+        <script type="text/javascript" src="scripts/routers/router.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+    </body>
 </html>

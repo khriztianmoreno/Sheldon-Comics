@@ -30,6 +30,17 @@ form label {
 	text-decoration: none;
 	font-size: 15px;
 }
+#account-options a {
+	padding: 0 !important;
+	color: #c93529 !important; 
+	font-size: 25px !important;
+}
+
+#account-options a:hover {
+	padding: 0 !important;
+	color: #000000 !important; 
+	font-size: 25px !important;
+}
 
 /* ----------------------------------------- */
 /*********** Gallery Container ***********/
