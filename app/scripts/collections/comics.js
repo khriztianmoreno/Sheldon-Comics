@@ -1,3 +1,4 @@
-SheldonComic.Collections.Comics = Backbone.Collection.extend({
-  model: SheldonComin.Models.Comic
+Sheldon.Collections.Comics = Backbone.Firebase.Collection.extend({
+	model: Sheldon.Models.Comic,
+	firebase: "http://sheldon-comics.firebaseio.com/comics"
 });

@@ -513,6 +513,8 @@
 		font-size: 20px;
 	}
 
+	#slide-show-main{display: none;}
+
 }
 
 @media (max-width: 479px) {
@@ -640,6 +642,8 @@
 		max-width: 90%;
 	}
 
+	#slide-show-main{display: none;}
+
 }
 
 /* Nav Responsive Breakpoints */
@@ -652,5 +656,6 @@
 	header nav ul.nav-top li.phone {
 		display: block;
 	}
+	#slide-show-main{display: none;}
 
 }

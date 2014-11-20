@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Sheldon Comics</title>
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- StyleSheets /-->
 		<link rel='shortcut icon' href='images/favicon.png' type='image/x-icon' />
 		<!-- Latest compiled and minified CSS -->
@@ -81,9 +83,21 @@
 															<form action="" id="" type="post">
 																<div class="row">
 																	<div class="form-group">
+																		<div class="col-md-6">
+																			<label>First Name</label>
+																			<input type="text" value="" class="form-control">
+																		</div>
+																		<div class="col-md-6">
+																			<label>Last Name</label>
+																			<input type="text" value="" class="form-control">
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="form-group">
 																		<div class="col-md-12">
 																			<label>E-mail Address</label>
-																			<input type="text" value="" class="form-control">
+																			<input type="email" value="" class="form-control">
 																		</div>
 																	</div>
 																</div>
@@ -107,26 +121,6 @@
 															</form>
 															<p class="log-in-info">Already have an account? <a href="#" id="headerSignIn">Log In!</a></p>
 														</div>
-														<div class="recover-form">
-															<span class="mega-menu-sub-title">Reset My Password</span>
-															<p>Complete the form below to receive an email with the authorization code needed to reset your password.</p>
-															<form action="" id="" type="post">
-																<div class="row">
-																	<div class="form-group">
-																		<div class="col-md-12">
-																			<label>E-mail Address</label>
-																			<input type="text" value="" class="form-control">
-																		</div>
-																	</div>
-																</div>
-																<div class="row">
-																	<div class="col-md-12">
-																		<input type="submit" value="Submit" class="btn btn-danger pull-right push-bottom" data-loading-text="Loading...">
-																	</div>
-																</div>
-															</form>
-															<p class="log-in-info">Already have an account? <a href="#" id="headerRecoverCancel">Log In!</a></p>
-														</div>
 													</div>
 												</div>
 											</div>
@@ -139,7 +133,7 @@
 					</div>
 					<!-- end Menu Container -->	
 					<!-- /*********** Image top ***********/ -->
-					<div class="image_top">
+					<div id="slide-show-main" class="image_top">
 						<img src="images/866x330.png" alt="" /><!--Replace With Your Image-->		
 					</div>
 				</div>
@@ -160,111 +154,9 @@
 					</ul>
 					<hr>
 					<div class="row">
-						<ul class="portfolio-list sort-destination isotope" data-sort-id="portfolio" style="position: relative; overflow: hidden; height: 594px;">
-							<li class="col-md-3 isotope-item populars" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
-								<div class="portfolio-item img-thumbnail">
-									<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="images/cover.jpg">
-									<span class="thumb-info-title">
-									<span class="thumb-info-inner">Spider Man</span>
-									</span>
-									<span class="thumb-info-action">
-									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
-									</span>
-									</a>
-								</div>
-							</li>
-							<li class="col-md-3 isotope-item recommended" style="position: absolute; left: 0px; top: 0px; transform: translate3d(293px, 0px, 0px);">
-								<div class="portfolio-item img-thumbnail">
-									<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="images/cover.jpg">
-									<span class="thumb-info-title">
-									<span class="thumb-info-inner">Iron Man</span>
-									</span>
-									<span class="thumb-info-action">
-									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
-									</span>
-									</a>
-								</div>
-							</li>
-							<li class="col-md-3 isotope-item searches" style="position: absolute; left: 0px; top: 0px; transform: translate3d(586px, 0px, 0px);">
-								<div class="portfolio-item img-thumbnail">
-									<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="images/cover.jpg">
-									<span class="thumb-info-title">
-									<span class="thumb-info-inner">X-MEN</span>
-									</span>
-									<span class="thumb-info-action">
-									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
-									</span>
-									</a>
-								</div>
-							</li>
-							<li class="col-md-3 isotope-item populars" style="position: absolute; left: 0px; top: 0px; transform: translate3d(879px, 0px, 0px);">
-								<div class="portfolio-item img-thumbnail">
-									<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="images/cover.jpg">
-									<span class="thumb-info-title">
-									<span class="thumb-info-inner">Hulk</span>
-									</span>
-									<span class="thumb-info-action">
-									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
-									</span>
-									</a>
-								</div>
-							</li>
-							<li class="col-md-3 isotope-item populars" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 297px, 0px);">
-								<div class="portfolio-item img-thumbnail">
-									<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="images/cover.jpg">
-									<span class="thumb-info-title">
-									<span class="thumb-info-inner">Superman</span>
-									</span>
-									<span class="thumb-info-action">
-									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
-									</span>
-									</a>
-								</div>
-							</li>
-							<li class="col-md-3 isotope-item populars" style="position: absolute; left: 0px; top: 0px; transform: translate3d(293px, 297px, 0px);">
-								<div class="portfolio-item img-thumbnail">
-									<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="images/cover.jpg">
-									<span class="thumb-info-title">
-									<span class="thumb-info-inner">Wolverine</span>
-									</span>
-									<span class="thumb-info-action">
-									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
-									</span>
-									</a>
-								</div>
-							</li>
-							<li class="col-md-3 isotope-item recommended" style="position: absolute; left: 0px; top: 0px; transform: translate3d(586px, 297px, 0px);">
-								<div class="portfolio-item img-thumbnail">
-									<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="images/cover.jpg">
-									<span class="thumb-info-title">
-									<span class="thumb-info-inner">Capitan America</span>
-									</span>
-									<span class="thumb-info-action">
-									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
-									</span>
-									</a>
-								</div>
-							</li>
-							<li class="col-md-3 isotope-item searches" style="position: absolute; left: 0px; top: 0px; transform: translate3d(879px, 297px, 0px);">
-								<div class="portfolio-item img-thumbnail">
-									<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="images/cover.jpg">
-									<span class="thumb-info-title">
-									<span class="thumb-info-inner">GI JOE</span>
-									</span>
-									<span class="thumb-info-action">
-									<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
-									</span>
-									</a>
-								</div>
-							</li>
+						<ul id="comics-list" class="portfolio-list sort-destination" style="position: relative; overflow: hidden; height: 594px;">
+							<!--- Template Render-->
+							
 						</ul>
 					</div>
 				</div>
@@ -333,52 +225,45 @@
 				</div>
 			</div>
 		</footer>
+
+		<script id="list-comics" type="text/x-handlebars-template">
+									<div class="portfolio-item img-thumbnail">
+										<a href="#" class="thumb-info">
+										<img alt="{{title}}" class="img-responsive" src="{{image}}">
+										<span class="thumb-info-title">
+										<span class="thumb-info-inner">{{title}}</span>
+										</span>
+										<span class="thumb-info-action">
+										<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+										</span>
+										</a>
+									</div>
+							</script>
+
+
+
+
+
+
 		<script src="scripts/vendor/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript">
-			$( document ).ready(function() {
+		<script src="bower_components/underscore/underscore.js"></script>
+		<script src="bower_components/backbone/backbone.js"></script>
+		<!-- Firebase -->
+		<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+		<!-- BackFire -->
+		<script src="https://cdn.firebase.com/libs/backfire/0.4.0/backfire.min.js"></script>
+		<script src="bower_components/handlebars/handlebars.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+	  	<script type="text/javascript" src="scripts/models/comic.js"></script>
+	  	<script type="text/javascript" src="scripts/models/loan.js"></script>
+	  	<script type="text/javascript" src="scripts/models/user.js"></script>
+	  	<script type="text/javascript" src="scripts/collections/comics.js"></script>
+	  	<script type="text/javascript" src="scripts/collections/loans.js"></script>
+	  	<script type="text/javascript" src="scripts/collections/users.js"></script>
+	  	<script type="text/javascript" src="scripts/views/comic.js"></script>
+	  	<script type="text/javascript" src="scripts/views/comics.js"></script>
+	  	<script type="text/javascript" src="scripts/routers/router.js"></script>
+	  	<script type="text/javascript" src="scripts/main.js"></script>
 
-				var headerAccountWrapper = $("#headerAccount"),
-				closeEventAdded = false;
-
-				// Events
-				headerAccountWrapper.find("input").on("focus", function() {
-					headerAccountWrapper.addClass("open");
-
-					if(closeEventAdded) return;
-
-					$(document).mouseup(function(e) {
-					    if (!headerAccountWrapper.is(e.target) && headerAccountWrapper.has(e.target).length === 0) {
-				        	headerAccountWrapper.removeClass("open");
-				    	}
-					});
-
-					closeEventAdded = true;
-				});
-
-			    $("#headerSignUp").on("click", function(e) {
-					e.preventDefault();
-					headerAccountWrapper.addClass("signup").removeClass("signin").removeClass("recover");
-					headerAccountWrapper.find(".signup-form input:first").focus();
-				});
-
-				$("#headerSignIn").on("click", function(e) {
-					e.preventDefault();
-					headerAccountWrapper.addClass("signin").removeClass("signup").removeClass("recover");
-					headerAccountWrapper.find(".signin-form input:first").focus();
-				});
-
-				$("#headerRecover").on("click", function(e) {
-					e.preventDefault();
-					headerAccountWrapper.addClass("recover").removeClass("signup").removeClass("signin");
-					headerAccountWrapper.find(".recover-form input:first").focus();
-				});
-
-				$("#headerRecoverCancel").on("click", function(e) {
-					e.preventDefault();
-					headerAccountWrapper.addClass("signin").removeClass("signup").removeClass("recover");
-					headerAccountWrapper.find(".signin-form input:first").focus();
-				});
-			});
-		</script>
 	</body>
 </html>

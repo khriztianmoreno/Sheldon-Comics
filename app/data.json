@@ -1,0 +1,123 @@
+{
+  	"users" : 
+		  {
+		    "_63lacb0zh" : {
+		      "idPerson" 		: "_63lacb0zh",
+		      "firstpassword" 	: "Sheldon",
+		      "lastpassword" 	: "Cooper",
+		      "email" 			: "sheldon.coopr@gmail.com",
+		      "password" 		: "bazinga",
+		      "avatar"			: "images/user/user1.jpg",
+			  "isAdmin"			: "true"
+		    },
+		    "_9waf0x815" : {
+		      "idPerson" 		: "_9waf0x815",
+		      "firstpassword" 	: "Cristian",
+		      "lastpassword" 	: "Moreno",
+		      "email" 			: "khriztianmoreno@gmail.com",
+		      "password" 		: "bazinga",
+		      "avatar"			: "images/user/user2.jpg",
+			  "isAdmin"			: "false"
+		    },
+		    "_hpnsvlz10" : {
+		      "idPerson" 		: "_hpnsvlz10",
+		      "firstpassword"	: "Laura",
+		      "lastpassword" 	: "Restrepo",
+		      "email" 			: "laura.restrepo@gmail.com",
+		      "password" 		: "bazinga",
+		      "avatar"			: "images/user/user3.jpg",
+			  "isAdmin"			: "false"
+		    }
+		  },
+	"comics" : 
+		  {
+		    "9w21r8zjx" : {
+		     	"idComic"	: "9w21r8zjx",
+				"isbn"		: "977000548400600004",
+				"title"		: "Spirderman",
+				"synopsis"  : "loremp impsun",
+				"genders"   : ["Science Fiction ","Superheroes"],
+				"image"		: "images/comics/spiderman/cover1.jpg",
+				"author"	: "Stan Lee",
+				"published" : "Marvel Comics",
+				"isBorrow"  : false,
+				"comments"	: 
+					{
+						"azpu1hq2m":{ "author": "khriztianmoreno@gmail.com", "message": "loremp impsun" },
+						"cb388g10t":{ "author": "khriztianmoreno@gmail.com", "message": "loremp impsun" }
+					}
+		    },
+		    "eufzsdgi3" : {
+		     	"idComic"	: "eufzsdgi3",
+				"isbn"		: "977000548400600004",
+				"title"		: "Spirderman",
+				"synopsis"  : "loremp impsun",
+				"genders"   : ["Science Fiction ","Superheroes"],
+				"image"		: "images/comics/spiderman/cover1.jpg",
+				"author"	: "Stan Lee",
+				"published" : "Marvel Comics",
+				"isBorrow"  : false,
+				"comments"	: 
+					{
+						"b5oo2vu6a":{ "author": "khriztianmoreno@gmail.com", "message": "loremp impsun" },
+						"b5oo2vu6a":{ "author": "khriztianmoreno@gmail.com", "message": "loremp impsun" }
+					}
+		    },
+		    "123onnhuu" : {
+		     	"idComic"	: "123onnhuu",
+				"isbn"		: "977000548400600004",
+				"title"		: "Spirderman",
+				"synopsis"  : "loremp impsun",
+				"genders"   : ["Science Fiction ","Superheroes"],
+				"image"		: "images/comics/spiderman/cover1.jpg",
+				"author"	: "Stan Lee",
+				"published" : "Marvel Comics",
+				"isBorrow"  : false,
+				"comments"	: 
+					{
+						"6ejbzxlyw":{ "author": "khriztianmoreno@gmail.com", "message": "loremp impsun" },
+						"9a62fca2h":{ "author": "khriztianmoreno@gmail.com", "message": "loremp impsun" }
+					}
+		    },
+		    "m549m0dz2" : {
+		     	"idComic"	: "m549m0dz2",
+				"isbn"		: "977000548400600004",
+				"title"		: "Spirderman",
+				"synopsis"  : "loremp impsun",
+				"genders"   : ["Science Fiction ","Superheroes"],
+				"image"		: "images/comics/spiderman/cover1.jpg",
+				"author"	: "Stan Lee",
+				"published" : "Marvel Comics",
+				"isBorrow"  : false,
+				"comments"	: 
+					{
+						"wj92tw2wu":{ "author": "khriztianmoreno@gmail.com", "message": "loremp impsun" },
+						"_66lacb2ads":{ "author": "khriztianmoreno@gmail.com", "message": "loremp impsun" }
+					}
+		    }
+		  },
+	"loans" :
+		{
+			"4li3oxykr":{
+				"idLoan": "4li3oxykr",
+				"loanDate": "19-Nov-2014",
+				"dueDate": "22-Nov-2014",
+				"idPerson": "_9waf0x815",
+				"idComic": "_63lacb0ads"
+			},
+			"iveu9kg0z":{
+				"idLoan": "iveu9kg0z",
+				"loanDate": "19-Nov-2014",
+				"dueDate": "22-Nov-2014",
+				"idPerson": "_9waf0x815",
+				"idComic": "_63lacb0ads"
+			},
+			"akjboixn7":{
+				"idLoan": "akjboixn7",
+				"loanDate": "19-Nov-2014",
+				"dueDate": "22-Nov-2014",
+				"idPerson": "_9waf0x815",
+				"idComic": "_63lacb0ads"
+			}
+		}
+}
