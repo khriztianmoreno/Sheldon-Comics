@@ -6,7 +6,7 @@
 
 git status
 git add --all
-git commit -m "change links at the home"
+git commit -m "Add the files basic build yeoman"
 git push origin master
 
 
