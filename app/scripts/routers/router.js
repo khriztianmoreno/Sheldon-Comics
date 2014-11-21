@@ -11,6 +11,7 @@ Sheldon.Router = Backbone.Router.extend({
 	    this.users = new Sheldon.Collections.Users();
 	    this.comicslist = new Sheldon.Views.Comics({ collection: this.comics });
 	    this.userLogin = new Sheldon.Views.UserCreateAccount({ collection: this.users });
+	    this.userAuth = new Sheldon.Views.UserAuthentication({ collection: this.users });
 
 	    Backbone.history.start();
 	},
@@ -18,6 +19,7 @@ Sheldon.Router = Backbone.Router.extend({
 	index: function () {
 	    this.comicslist.render();
 	    this.userLogin.initialize();
+	    this.userAuth.initialize();
 	},
 
 	comic: function (name) {

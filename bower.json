@@ -4,7 +4,8 @@
   "dependencies": {
     "jquery": "~2.1.0",
     "backbone": "~1.1.2",
-    "handlebars": "~2.0.0"
+    "handlebars": "~2.0.0",
+    "backbone-localstorage": "~0.3.2"
   },
   "authors": [
     "Khriztian Moreno <khriztianmoreno@gmail.com>"

@@ -49,8 +49,8 @@
                                                                 <div class="row">
                                                                     <div class="form-group">
                                                                         <div class="col-md-12">
-                                                                            <label>Username or E-mail Address</label>
-                                                                            <input type="text" value="" class="form-control" required>
+                                                                            <label>E-mail Address</label>
+                                                                            <input id="email-login" name="email-login" type="text" value="khriztianmoreno@gmail.com" class="form-control" required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -58,7 +58,7 @@
                                                                     <div class="form-group">
                                                                         <div class="col-md-12">
                                                                             <label>Password</label>
-                                                                            <input type="password" value="" class="form-control" required>
+                                                                            <input id="password-login" name="password-login" type="password" value="123456" class="form-control" required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -259,7 +259,7 @@
                                                 <a id="my-account" href="#my-account">My Account</a>
                                             </li>
                                             <li>
-                                                <a href="#">Log Out</a>
+                                                <a id="log-out" href="#">Log Out</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -274,6 +274,7 @@
         <script src="scripts/vendor/jquery-1.7.2.min.js"></script>
         <script src="bower_components/underscore/underscore.js"></script>
         <script src="bower_components/backbone/backbone.js"></script>
+        <script src="bower_components/backbone-localstorage/backbone-localstorage.js"></script>
         <!-- Firebase -->
         <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
         <!-- BackFire -->
