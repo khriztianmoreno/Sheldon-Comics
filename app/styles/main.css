@@ -2,6 +2,8 @@
 
 body { font-family: Open Sans, Tahoma, Arial, sans-serif; font-size: 13px; font-weight: normal;  color: #333333; }
 
+ul{list-style: none;}
+
 a {
 color: #b73329;
 text-decoration: none;

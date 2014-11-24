@@ -239,6 +239,9 @@
             <ul class="nav nav-pills nav-main" id="mainMenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Loans</a></li>
+                {{#if isAdmin}}
+                    <li><a href="#">Admin</a></li>
+                {{/if}}
                 <li class="dropdown mega-menu-item mega-menu-signin signin logged" id="headerAccount">
                     <a id="profile-sign" href="#" class="dropdown-toggle">{{firstName}} {{lastName}}</a>
                     <ul class="dropdown-menu">
@@ -274,7 +277,7 @@
         <script src="scripts/vendor/jquery-1.7.2.min.js"></script>
         <script src="bower_components/underscore/underscore.js"></script>
         <script src="bower_components/backbone/backbone.js"></script>
-        <script src="bower_components/backbone-localstorage/backbone-localstorage.js"></script>
+        <script src="bower_components/backbone.session.js"></script>
         <!-- Firebase -->
         <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
         <!-- BackFire -->

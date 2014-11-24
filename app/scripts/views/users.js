@@ -56,16 +56,63 @@ Sheldon.Views.UserAuthentication = Backbone.View.extend({
 	template: Handlebars.compile($("#list-profile").html()),
 
 	events: {
-		"click #btn-login" : "authentication",
+		"click #btn-login" : "login",
 		"click #log-out" : "logOut"
 	},
 
 	initialize: function() {
+		//Check for sessionStorage support
+        if (localStorage && sessionStorage) { 
+        	this.supportStorage = true; 
+        	this.getAuth();
+        };
+
 	    this.email = this.$("#email-login"); 
 	    this.password = this.$("#password-login");
 	},
 
-	authentication: function(evt)
+	get: function (key) {
+        if (this.supportStorage) {
+            var data = sessionStorage.getItem(key);
+            if (data && data[0] === '{') {
+                return JSON.parse(data);
+            } else {
+                return data;
+            }
+        }
+    },
+
+
+    set: function (key, value) {
+        if (this.supportStorage) {
+            sessionStorage.setItem(key, value);
+        }
+        return this;
+    },
+
+    unset: function (key) {
+        if (this.supportStorage) {
+            sessionStorage.removeItem(key);
+        }
+        return this;
+    },
+
+    clear: function () {
+        if (this.supportStorage) {
+            sessionStorage.clear();
+        }
+    },
+
+    getAuth: function(){
+    	var auth = this.get("user-auth");
+    	if (auth === null) {
+    		return;
+    	} else {
+    		this.render(auth);
+    	};
+    },
+
+	login: function(evt)
 	{
 		if (evt) evt.preventDefault();
 		
@@ -77,30 +124,25 @@ Sheldon.Views.UserAuthentication = Backbone.View.extend({
 			return; 
 		}else{
 			//console.log(userAuth.toJSON());
-			$("#slide-show-main").hide(); 
-			$("#headerContainer").css("height","220px").css("background","#151515"); 
-
 			this.listenTo(this.collection, "change", this.login, this);
-
-			//var userLogin = new Sheldon.Views.UserCreateAccount({ model: userAuth.attributes });
+			this.set("user-auth",JSON.stringify(userAuth));
+			this.render(userAuth.toJSON());
 		};
-
-		
-
-		//this.render(user);
-
-		
-	},
-
-	login: function (auth) {
-		console.log(auth);
-		debugger
-	    var comicView = new Sheldon.Views.UserCreateAccount({ model: auth });
-	    this.$el.append(comicView.render().el);
 	},
 
 	logOut: function(){
+		this.unset("user-auth");
+		$("#slide-show-main").show(); 		
+		$("#headerContainer").css("height","695px").css("background","#151515 url('../images/background_top.png') center top no-repeat"); 
+	},
 
+	render: function (user) {
+		$("#slide-show-main").hide(); 
+		$("#headerContainer").css("height","220px").css("background","#151515"); 
+
+	    var html = this.template(user);
+	    this.$el.html(html);
+	    return this;
 	}
 
 });
