@@ -47,6 +47,17 @@ form label {
 /* ----------------------------------------- */
 /*********** Gallery Container ***********/
 
+#detail-comic, #profile{margin-top: 30px;}
+#detail-comic h1 {color: #b73329; font-size: 60px; font-weight: 400; font-family: Bangers, Open Sans, Tahoma, Arial, sans-serif; text-shadow: 0 1px 0 #000000; margin:0px;}
+#detail-comic .title{
+	padding-bottom: 8px;
+	margin: 36px 0 18px;
+	border-bottom: 1px solid #dddddd;
+}
+
+#comments-comics{margin-top: 20px;}
+#comments-comics h2 {color: #b73329; font-size: 20px; font-weight: 400; font-family: Bangers, Open Sans, Tahoma, Arial, sans-serif; text-shadow: 0 1px 0 #000000; margin:0 17px;}
+
 #newComicsContainer { padding-top: 25px; border-bottom: 5px solid #b73329;}
 .bigTitle { margin: 0 auto; width: 448px; height: 130px; background: url('../images/bg_title.png') center top no-repeat; text-align: center; }
 .bigTitle h2 { padding: 35px; color: #ffffff; font-size: 63px; font-weight: 400; font-family: Bangers, Open Sans, Tahoma, Arial, sans-serif; text-shadow: 1px 1px 0 #000000;}

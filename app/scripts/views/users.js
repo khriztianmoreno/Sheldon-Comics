@@ -57,7 +57,8 @@ Sheldon.Views.UserAuthentication = Backbone.View.extend({
 
 	events: {
 		"click #btn-login" : "login",
-		"click #log-out" : "logOut"
+		"click #log-out" : "logOut",
+		"click #my-account" : "profile"
 	},
 
 	initialize: function() {
@@ -134,6 +135,21 @@ Sheldon.Views.UserAuthentication = Backbone.View.extend({
 		this.unset("user-auth");
 		$("#slide-show-main").show(); 		
 		$("#headerContainer").css("height","695px").css("background","#151515 url('../images/background_top.png') center top no-repeat"); 
+	},
+
+	profile: function(){
+		/*$("#store").hide();
+		//debugger
+		var auth = this.get("user-auth");
+    	
+    	if (auth === null) {
+    		return;
+    	} 
+
+		var template = Handlebars.compile($("#profile-template").html()); 
+		var html = template(auth);
+		this.$("#profile").html(html);
+	    return this;*/
 	},
 
 	render: function (user) {

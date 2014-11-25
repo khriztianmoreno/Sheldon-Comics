@@ -141,6 +141,12 @@
         </header>
         <!-- end header Container-->
         <div role="main" class="main">
+            <section id="profile" style="display:none;">
+                
+            </section>
+            <section id="detail-comic" class="container" style="display:none;">
+                
+            </section>
             <!-- /*********** Store ***********/ -->
             <section id="store">
                 <div class="container">
@@ -224,7 +230,7 @@
         </footer>
         <script id="list-comics" type="text/x-handlebars-template">
             <div class="portfolio-item img-thumbnail">
-            	<a href="#" class="thumb-info">
+            	<a href="#comic/{{idComic}}" class="thumb-info">
             	<img alt="{{title}}" class="img-responsive" src="{{image}}">
             	<span class="thumb-info-title">
             	<span class="thumb-info-inner">{{title}}</span>
@@ -273,8 +279,121 @@
                 </li> 
             </ul>          
         </script>
+        <script id="detail-comic-template" type="text/x-handlebars-template">
+            <div class="title">
+                    <h1>
+                        {{title}}
+                        <small>{{genders}}</small>
+                        <button id="close-detail-comic" class="close pull-right">×</button>
+                    </h1>                  
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="avatar center-block" src="{{image}}">
+                    </div>
+                    <!-- Tabs -->
+                    <div class="col-md-6">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li class="active"><a href="#Overview" role="tab" data-toggle="tab">Overview</a></li>
+                            <li class=""><a href="#games" role="tab" data-toggle="tab">Games</a></li>
+                            <li class=""><a href="#video" role="tab" data-toggle="tab">Video</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div id="myTab" class="tab-content">
+                            <div class="tab-pane active" id="Overview">
+                                <p>{{synopsis}}</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <strong>Gender</strong>
+                                        <span class="pull-right">{{genders}}</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Author</strong>
+                                        <span class="pull-right">{{author}}</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Published</strong>
+                                       <span class="pull-right">{{published}}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="games">
+                                <h3 style="margin-top: 10px;">MORE AMAZING GAMES</h3>
+                                <ul class="list-group">
+                                    {{#each games}}
+                                        <li class="list-group-item">
+                                            <a href="{{link}}"><strong>{{title}}</strong></a>
+                                        </li>
+                                     {{/each}}
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="video">
+                                <h3 style="margin-top: 10px;">MORE AMAZING VIDEOS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt natus et vero accusantium sed necessitatibus officia doloremque placeat sequi maiores, ipsa, blanditiis aliquam minus aliquid dolorum voluptas provident excepturi. Ipsam.</p>
+                            </div>
+                        </div>
+                        <div id="loan">
+                            <button id="loan-commic" type="button" class="btn btn-danger btn-lg">Borrow</button>
+                        </div>
+                    </div>
+                    <!-- /tabs -->
+                </div>
+                <div id="comments-comics" class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h2 class="panel-title">Comments <button class="close pull-right">×</button></h2>
+                  </div>
+                  <div class="panel-body">
+                    <form name="commentsForm" class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <div class="col-sm-6">
+                          <textarea placeholder="Please tell us what you think about Advanced SQL Azure" class="form-control" required="required"></textarea>
+                        </div>
+                        <div class="col-sm-4">
+                          <input type="email" placeholder="Please enter your email address" class="form-control" required="required">
+                          <label>
+                            <input type="checkbox">
+                            Anonymous
+                          </label>
+                        </div>
+                        <div class="col-sm-2">
+                          <button type="submit" class="btn btn-lg">Comment</button>
+                        </div>
+                      </div>
+                    </form>
+                    {{#each comments}}
+                        <blockquote>
+                          <p>{{message}}</p>
+                          <div>
+                            Comment by 
+                            <a href="mailto:{{author}}">{{author}}</a>
+                            on <span>{{commentDate}}</span>
+                          </div>
+                        </blockquote>
+                    {{/each}}                    
+                  </div>
+                </div>
+        </script>
+        <script id="profile-template" type="text/x-handlebars-template">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <img alt="" height="300" class="img-responsive" src="images/user/team-1.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="shorter">{{firstName}} <strong>{{lastName}}</strong></h2>
+                            <h4><a href="mailto:{{email}}">{{email}}</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus.</p>
+                        </div>
+                    </div>
+                    <hr class="tall">
+                </div>
+        </script>
 
         <script src="scripts/vendor/jquery-1.7.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="bower_components/underscore/underscore.js"></script>
         <script src="bower_components/backbone/backbone.js"></script>
         <script src="bower_components/backbone.session.js"></script>
