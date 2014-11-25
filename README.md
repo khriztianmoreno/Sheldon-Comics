@@ -7,6 +7,7 @@ A simple Sheldon-Comics  built with Backbone.js
 
 ```
 $ npm install
+$ bower instal
 ```
 
 ## Run

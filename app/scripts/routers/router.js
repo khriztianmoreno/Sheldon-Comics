@@ -1,7 +1,8 @@
 Sheldon.Router = Backbone.Router.extend({
 	routes: {
 		"": "index",
-	    "comic/:id": "comic"
+	    "comic/:id": "comic",
+	    "profile": "profile"
 	},
 	
 
@@ -24,6 +25,10 @@ Sheldon.Router = Backbone.Router.extend({
 	},
 
 	comic: function (name) {
+		
+	},
+
+	profile: function(){
 		
 	}
 });
