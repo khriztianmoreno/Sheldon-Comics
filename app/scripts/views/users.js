@@ -57,8 +57,8 @@ Sheldon.Views.UserAuthentication = Backbone.View.extend({
 
 	events: {
 		"click #btn-login" : "login",
-		"click #log-out" : "logOut",
-		"click #my-account" : "profile"
+		"click #log-out" : "logOut"
+		//"click #my-account" : "profile"
 	},
 
 	initialize: function() {
@@ -138,6 +138,7 @@ Sheldon.Views.UserAuthentication = Backbone.View.extend({
 	},
 
 	profile: function(){
+		console.log("asda");
 		/*$("#store").hide();
 		//debugger
 		var auth = this.get("user-auth");
@@ -158,6 +159,29 @@ Sheldon.Views.UserAuthentication = Backbone.View.extend({
 
 	    var html = this.template(user);
 	    this.$el.html(html);
+	    return this;
+	}
+
+});
+
+Sheldon.Views.UserProfile = Backbone.View.extend({
+	el: $("#profile"),
+
+	template: Handlebars.compile($("#profile-template").html()),
+
+	tagName: 'section',
+
+	initialize: function(){
+
+	},
+
+	render: function() {
+		var user = new Sheldon.Views.UserAuthentication();
+        var html = this.template(user.get("user-auth"));
+
+        $("#store").fadeOut( "slow" );
+
+	    this.$el.html(html).fadeIn( "slow" );
 	    return this;
 	}
 

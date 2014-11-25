@@ -2,7 +2,8 @@ var Sheldon = {
   	Models: {},
 	Views: {},
 	Collections: {},
-	Router: {}
+	Router: {},
+	Vent: _.extend( {}, Backbone.Events )
 };
 
 window.Sheldon = Sheldon;

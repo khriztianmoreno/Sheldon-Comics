@@ -11,9 +11,11 @@ Sheldon.Router = Backbone.Router.extend({
 	    this.loans = new Sheldon.Collections.Loans();
 	    this.users = new Sheldon.Collections.Users();
 	    this.comicslist = new Sheldon.Views.Comics({ collection: this.comics });
-	    //this.comicDetail = new Sheldon.Views.ComicDetail({ collection: this.comics });
+	    //Detail Comic
+	    this.comicDetail = new Sheldon.Views.ComicDetail({ collection: this.comics });
 	    this.userLogin = new Sheldon.Views.UserCreateAccount({ collection: this.users });
 	    this.userAuth = new Sheldon.Views.UserAuthentication({ collection: this.users });
+	    this.userProfile = new Sheldon.Views.UserProfile();
 
 	    Backbone.history.start();
 	},
@@ -24,11 +26,14 @@ Sheldon.Router = Backbone.Router.extend({
 	    this.userAuth.initialize();
 	},
 
-	comic: function (name) {
-		
+	comic: function (comicIndex) {
+		var comic = { idComic: comicIndex };
+		var model = this.comicslist.filter(comic);
+		this.comicDetail.render(model.toJSON());
 	},
 
 	profile: function(){
-		
+		this.userProfile.initialize();
+		this.userProfile.render();
 	}
 });
